@@ -3,7 +3,7 @@ int _numargs = 10;
 char *_args[10];
 int _argcount = 0;
 %}
-WORD [a-zA-Z0-9\/\.-]+ 
+WORD [a-zA-Z0-9\/\.\-_]+ 
 SPECIAL [()><|&;*]
 %%
         _argcount = 0; _args[0] = NULL;
