@@ -14,7 +14,7 @@ int main()
         input = getline();
         for (int i = 0; input[i] != NULL; ++i)
         {
-            if (*input[1] == *"cd" )
+            if (*input[0] == *"cd" )
             {
                 printf("done");
             }
