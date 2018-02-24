@@ -26,6 +26,7 @@ int main()
             printf("error with getcwd()");
 
         input = getline();
+        rl_bind_key('\t', rl_complete);
         printf("\n%s\n", input[1]);
         if (*input[0] == *("cd"))
         {
@@ -48,7 +49,7 @@ int main()
 
             if (ret == -1)
             {
-                perror("there is an error");
+                perror("cd");
             }
         }
         for (int i = 0; input[i] != NULL; ++i)
